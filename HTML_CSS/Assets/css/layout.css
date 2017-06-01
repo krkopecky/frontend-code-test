@@ -1,0 +1,524 @@
+
+/******************************************************** OVERRIDES */
+body {
+    background: #2399a6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrap {
+    width: 95%;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+ul.social li {
+    display: inline-block;
+    margin: 0 20px;
+}
+ul.social li:first-of-type {
+    margin-left: 0!important;
+}
+ul.social li:last-of-type {
+    margin-right: 0!important;
+}
+ul.social li a {
+    display: block;
+}
+
+.navbar-default {
+    border: none;
+    margin: 0;
+}
+.container-fluid {
+    padding: 0;
+}
+
+/******************************************************** HEADER */
+#header {
+    font-family: 'Lato', Arial, sans-serif;
+    -webkit-box-shadow: 0 2px 3px 0 #aaa;
+    -moz-box-shadow: 0 2px 3px 0 #aaa;
+    box-shadow: 0 2px 3px 0 #aaa;
+    position: relative;
+    z-index: 90;
+}
+.navbar-header {
+    float: none;
+    min-height: 100px;
+    background: #FFF;
+    padding: 0 10%;
+}
+.navbar-default .navbar-brand {
+    max-width: 33%;
+}
+.navbar-default .navbar-brand img {
+    height: 66px;
+} 
+.navbar-header #toplinks {
+    float: right;
+}
+.navbar-header #toplinks .toplink {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    margin: 12px;
+}
+.navbar-header #toplinks .toplink span,
+.navbar-header #toplinks span#menu {
+    display: block;
+}
+.navbar-header #toplinks svg path, .navbar-header #toplinks svg circle, .navbar-header #toplinks svg rect, .navbar-header #toplinks svg polygon {
+    fill: #2399a6;
+}
+.navbar-header #toplinks svg path[fill="none"], .navbar-header #toplinks svg circle[fill="none"], .navbar-header #toplinks svg rect[fill="none"], .navbar-header #toplinks svg polygon[fill="none"] {
+    fill: none!important;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 0;
+    margin: 12px 15px 12px 12px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    margin: 0 auto 4px;
+    background: #2399a6;
+}
+.navbar-header #toplinks span#menu {
+    padding-top: 2px;
+}
+.navbar-default .navbar-toggle:hover span#menu {
+    text-decoration: underline;
+}
+
+.navbar-collapse.collapse {
+    float: right;
+}
+#topnav {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+}
+#topnav a {
+    color: #323232;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#topnav a:hover {
+    text-decoration: underline;
+}
+
+#midnav {
+    background: #aaa;
+}
+.navbar-form {
+    padding: 0;
+    margin: 10px 0;
+}
+.navbar-form .form-control {
+    border-radius: 0;
+    border-color: #FFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-width: 264px;
+}
+.navbar-form .btn-primary {
+    margin-left: 25px;
+    background: #237377;
+    border-color: #237377;
+    padding: 6px 30px;
+    font-weight: 700;
+}
+.navbar-form .btn-primary svg {
+    display: none;
+}
+.navbar-form .btn-primary svg path, .navbar-form .btn-primary svg circle, .navbar-form .btn-primary svg rect, .navbar-form .btn-primary svg polygon {
+    fill: #FFF;
+}
+.navbar-form .btn-primary:hover, .navbar-form .btn-primary:focus {
+    background: #2399a6;
+    border-color: #2399a6;
+}
+#midnav a {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 15px 45px;
+}
+#midnav a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+
+/******************************************************** PROFILE */
+#profile {
+    background: #eee;
+}
+#profileimg {
+    float: left;
+    width: 264px;
+    position: relative;
+    z-index: 91;
+}
+
+#info,
+#links {
+    float: left;
+    width: 264px;
+    margin-left: 150px;
+    padding-top: 75px;
+}
+
+#info h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0;
+}
+#info h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+#info .btn-primary {
+    background: #237377;
+    border-color: #237377;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+#info .btn-primary:hover, #info .btn-primary:focus {
+    background: #2399a6;
+    border-color: #2399a6;
+}
+#info .social svg path, #info .social svg circle, #info .social svg rect, #info .social svg polygon {
+    fill: #595959;
+}
+#info .social svg:hover path, #info .social svg:hover circle, #info .social svg:hover rect, #info .social svg:hover polygon {
+    fill: #2399a6;
+}
+#info .social svg path[fill="none"], #info .social svg circle[fill="none"], #info .social svg rect[fill="none"], #info .social svg polygon[fill="none"] {
+    fill: none!important;
+}
+
+
+#links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#links li {
+    padding-bottom: 25px;
+}
+#links li a {
+    display: block;
+    color: #237377;
+    font-weight: 700;
+}
+#links li a:hover {
+    color: #2399a6;
+    text-decoration: none;
+}
+#links li a.telnum,
+#links li a.telnum:hover, #links li a.telnum:focus {
+    color: #595959;
+    text-decoration: none;
+}
+#links li a span {
+    width: 230px;
+    float: right;
+}
+#links svg path, #links svg circle, #links svg rect, #links svg polygon {
+    fill: #2399a6;
+}
+#links svg path[fill="none"], #links svg circle[fill="none"], #links svg rect[fill="none"], #links svg polygon[fill="none"] {
+    fill: none;
+}
+
+
+
+
+
+/******************************************************** CONTENT */
+#content {
+    padding: 50px 0;
+    background: #FFF;
+    line-height: 30px;
+}
+.nav-tabs.nav-justified>li>a {
+    border: none;
+    border-bottom: 2px solid #eee;
+    color: #aaa;
+    font-weight: 700;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs>li>a:hover {
+    border: none;
+    border-bottom: 2px solid #2399a6;
+    background: none;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+    color: #237377;
+}
+.tab-content {
+    padding-top: 50px;
+}
+#tabselector {
+    border: 2px solid #aaa;
+    border-radius: 0;
+    color: #237377;
+    font-weight: 700;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+    height: auto;
+}
+
+dt {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+dd {
+    padding-bottom: 40px;
+}
+
+
+
+
+
+/******************************************************** FOOTER */
+#footer {
+    color: #FFF;
+    padding: 25px 0;
+    font-family: 'Lato', Arial, sans-serif;
+}
+#footer svg path, #footer svg circle, #footer svg rect, #footer svg polygon {
+    fill: #FFF;
+}
+#footer svg path[fill="none"], #footer svg circle[fill="none"], #footer svg rect[fill="none"], #footer svg polygon[fill="none"] {
+    fill: none;
+}
+#footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+#footer a:hover, #footer a:active, #footer a.telnum {
+    text-decoration: none;
+}
+#footer p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+#footer ul.social {
+    padding-top: 20px;
+}
+#footer .pull-right {
+    text-align: right;
+}
+#footer .pull-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer .pull-right ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+#footer #copyr {
+    font-size: 12px;
+    padding: 15px 0;
+}
+#footer #organizations svg {
+    margin-left: 10px;
+}
+
+
+
+
+
+/******************************************************** RESPONSIVE */
+
+@media (max-width: 1432px) {
+    .navbar-header {
+        padding: 0 2.5%;
+    }
+    #topnav {
+        right: 2.5%;
+    }
+}
+@media (max-width: 1170px) {
+    #midnav a {
+        padding: 15px;
+    }
+    #profileimg {
+        width: 200px;
+    }
+    #info,
+    #links {
+        margin-left: 8%;
+        padding-top: 30px;
+        width: 220px;
+    }
+    #profile ul.social li {
+        margin: 0 15px;
+    }
+    #links li a span {
+        width: 180px;
+    }
+}
+@media (max-width: 992px) {
+    #content dl {
+        padding-top: 20px;
+    }
+    #content dd {
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 895px) {
+    .wrap {
+        width: auto;
+        padding: 0 15px;
+    }
+    .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+        margin: 0;
+        padding: 0;
+        min-height: 55px;
+    }
+    .navbar-default .navbar-brand img {
+        height: 33px;
+    }
+    .navbar-collapse.collapse {
+        float: none;
+        border: none;
+    }
+    #topnav {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    #topnav a {
+        color: #FFF;
+        text-align: center;
+    }
+    #midnav {
+        float: right;
+        margin: 0;
+    }
+    #midnav li {
+        float: left;
+    }
+    #midnav li a {
+        padding: 15px 0;
+        margin: 0 10px;
+    }
+    #midnav li:last-of-type a {
+        margin-right: 0;
+    }
+    .navbar-form {
+        float: left;
+    }
+    .navbar-form .form-group {
+        display: inline-block;
+        margin: 0;
+    }
+    .navbar-form .form-control {
+        min-width: 200px;
+        font-size: 14px;
+    }
+    .navbar-form .btn-primary {
+        margin-left: 0;
+        vertical-align: top;
+    }
+    #info,
+    #links {
+        margin-left: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-form {
+        font-size: 0;    
+    }
+    .navbar-form .btn-primary {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 10px 20px;
+    }
+    .navbar-form .btn-primary svg {
+        display: block;
+    }
+    .navbar-form .btn-primary span {
+        display: none;
+    }
+    #profileimg,
+    #info,
+    #links {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    #links li a span {
+        width: auto;
+        float: none;
+        padding-left: 10px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 685px) {
+    #midnav, .nav-tabs {
+        display: none;
+    }
+    #topnav .hidden, #tabselector {
+        display: block!important;
+    }
+    .navbar-form {
+        float: none;
+    }
+    .navbar-form .form-group {
+        width: 80%;
+        min-width: 0;
+    }
+    .navbar-form .btn-primary {
+        width: 20%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar-form .btn-primary svg {
+        margin: 0 auto;
+    }
+    .tab-content {
+        padding-top: 25px;
+    }
+    #footer .pull-left, #footer .pull-right {
+        float: none!important;
+        text-align: center;
+    }
+    #footer .pull-right {
+        padding-top: 20px;
+    }
+    #footer .pull-right ul li {
+        margin: 0 5px;
+    }
+    #footer #organizations svg {
+        margin: 0 5px;
+    }
+}

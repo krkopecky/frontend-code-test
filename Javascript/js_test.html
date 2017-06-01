@@ -146,5 +146,52 @@ Place your answers below this comment block.
 Note: You have jquery already loaded on the page.
 Please also write your jquery in a no conflict manner.
 -->
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            
+            // Manipulate the Last LI
+            jQuery('#content ul li').last().css('color', 'red');
+            
+            // Select specific children from a nested list
+            jQuery('#content2 ul > li > ul').children('li'); // No action instructed to take on select items
+            
+            // Get a Field value and Write it to the page
+            jQuery('select[name="CodeTypes"]').bind('change', function () {
+                var codeType = jQuery('select[name="CodeTypes"] option:selected').val();
+                if (jQuery('#codetype').length == 0)
+                    jQuery('select[name="CodeTypes"] option:selected').parent().after('<div id="codetype">' + codeType + '</div>');
+                else
+                    jQuery('#codetype').html(codeType);
+            });
+            jQuery('select[name="CodeTypes"]').trigger('change');
+            
+            // Find Dimensions of an Element
+            var height = jQuery('#setDims').outerHeight();
+            var width = jQuery('#setDims').outerWidth();
+            jQuery('#setDims').after('<div id="dims">' + width + 'px wide, ' + height + 'px tall');
+            
+            // Events
+            jQuery('#clickEventLink').click(function (e) {
+                jQuery(this).toggleClass("clicked not-clicked");
+            });
+            
+            // Ajax
+            jQuery.ajax({
+                url: "ajax_return.html",
+                success: function(data) { 
+                    var items = jQuery.parseJSON(data);
+                    var output= '<ul>';
+                    jQuery.each(items, function(i) {
+                        output += '<li>' + i + ': ' + items[i] + '</li>';
+                    });
+                    output += '</ul>';
+                    jQuery('#jsonResponse').append(output);
+                }
+            });
+            
+        });
+    </script>
+    
 </body>
 </html>
